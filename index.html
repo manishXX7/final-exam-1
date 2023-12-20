@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Local Animal Shelter</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#adoptable-pets">Adoptable Pets</a></li>
+            <li><a href="#how-to-help">How to Help</a></li>
+            <li><a href="#success-stories">Success Stories</a></li>
+            <li><a href="#age-converter">Pet Age Converter</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <img src="https://piximus.net/media/29436/the-most-heartwarming-photos-ever-8.jpg" alt="Heartwarming Image">
+            <div class="hero-text">
+                <h1>Welcome to Our Animal Shelter</h1>
+                <p>Find your new furry friend and join us in making a difference in their lives.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Adoptable Pets Section -->
+    <section id="adoptable-pets">
+        <h2>Adoptable Pets</h2>
+        <div class="pet-profile">
+            <img src="https://th.bing.com/th/id/R.23fdd93f5a9d1337a3309c56c266a811?rik=oMt%2bq9KuT3fGeA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f9%2f90%2fLabrador_Retriever_portrait.jpg&ehk=Kse1knvMWRxxVOGeJ60Jp4w17ydmE%2fZMJ2i9%2bs977DM%3d&risl=&pid=ImgRaw&r=0" alt="Dog 1">
+            <div class="pet-details">
+                <h3>Dog Name 1</h3>
+                <p>Breed: Labrador Retriever</p>
+                <p>Age: 2 years</p>
+                <p>Temperament: Friendly and Playful</p>
+                <p>Special Needs: None</p>
+            </div>
+        </div>
+
+        <div class="pet-profile">
+            <img src="https://th.bing.com/th/id/OIP.70aOY6Iu2__MEgsDtH3HoAHaE8?rs=1&pid=ImgDetMain" alt="Cat 1">
+            <div class="pet-details">
+                <h3>Cat Name 1</h3>
+                <p>Breed: Domestic Shorthair</p>
+                <p>Age: 1.5 years</p>
+                <p>Temperament: Cuddly and Calm</p>
+                <p>Special Needs: None</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- How to Help Section -->
+    <section id="how-to-help">
+        <h2>How to Help</h2>
+
+        <!-- Volunteering -->
+        <div class="help-item">
+            <h3>Volunteering</h3>
+            <p>Join our team of dedicated volunteers and make a positive impact on the lives of animals in need. Help with daily care, socialization, and more.</p>
+        </div>
+
+        <!-- Donations -->
+        <div class="help-item">
+            <h3>Donations</h3>
+            <p>Your generous donations allow us to provide food, shelter, and medical care to our animals. Every contribution makes a difference.</p>
+        </div>
+
+        <!-- Fostering -->
+        <div class="help-item">
+            <h3>Fostering</h3>
+            <p>Become a foster parent and provide a temporary home for animals awaiting adoption. Fostering helps us save more lives and find forever homes.</p>
+        </div>
+
+        <!-- Other ways to help -->
+        <div class="help-item">
+            <h3>Other Ways to Help</h3>
+            <p>Explore other ways to support our shelter, such as attending fundraising events, spreading awareness, or sponsoring an animal's adoption fee.</p>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success-stories">
+        <h2>Success Stories</h2>
+
+        <!-- Story 1 -->
+        <div class="success-story">
+            <img src="https://th.bing.com/th/id/OIP.FVlg4FPFxj-mWqicabfEJQHaHd?rs=1&pid=ImgDetMain" alt="Success Story 1">
+            <div class="story-details">
+                <h3>Happy Tail: Bella's Journey to a Forever Home</h3>
+                <p>
+                    Bella, a cheerful dog nicknamed "Happy Tail," found her forever home when a kind family adopted her from a local shelter. Her wagging tail became a symbol of the joy she brought to her new family, turning a once uncertain fate into a heartwarming tale of love and belonging.</p>
+            </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="success-story">
+            <img src="https://i.pinimg.com/originals/21/fd/6b/21fd6b0bf57926252ca7583cda7b8508.jpg" alt="Success Story 2">
+            <div class="story-details">
+                <h3>From Stray to Loved: Max's Transformation</h3>
+                <p>
+                    Max, a stray dog, found a loving home that transformed his life. From wandering the streets to being cherished by a caring family, Max's journey is a heartening tale of resilience and the power of love..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Age to Human Age Converter Section -->
+    <section id="age-converter">
+        <label for="petType">Select Pet Type:</label>
+        <select id="petType">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+        </select>
+        <label for="petAge">Enter Pet Age:</label>
+        <input type="number" id="petAge">
+        <button onclick="convertAge()">Convert Age</button>
+        <p id="result"></p>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact">
+    <h2><center>Contact Us</center></h2>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <p><center>Email: info@animalshelter.com</center></p>
+        <p><center>Phone: (123) 456-7890</center></p>
+        <p><center>For inquiries, you can reach us at:</center></p>
+        <p><center>Visit us at: 123 Shelter St, Cityville, State, 12345</center></p>
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h3>Send us a Message</h3>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer>
+    <p><center>Name: Manish Kumar Rauniyar (075)</center></p>
+    
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <a href="#" target="_blank" title="Facebook"><img src="https://www.quinneysbush.co.nz/wp-content/uploads/2021/04/cropped-Facebook-logo.png" alt="Facebook"></a>
+        <a href="#" target="_blank" title="Twitter"><img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Symbol.png" alt="Twitter"></a>
+        <a href="#" target="_blank" title="Instagram"><img src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?rs=1&pid=ImgDetMain" alt="Instagram"></a>
+        
+    </div>
+
+    <form>
+        <label for="newsletterEmail">Sign up for newsletters:</label>
+        <input type="email" id="newsletterEmail" placeholder="Your email">
+        <button type="submit">Subscribe</button>
+    </form>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
